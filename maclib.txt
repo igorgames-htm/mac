@@ -4634,8 +4634,8 @@ function :Window(Settings)
 				SelectCurrentTab()
 			end
 
-			function TabFunctions:InsertConfigSection(Side)
-				local configSection = TabFunctions:Section({ Side = "Left" })
+			function TabFunctions:InsertConfigSection(Side2)
+				local configSection = TabFunctions:Section({ Side = Side2 })
 
 				if isStudio then
 					configSection:Label({Text = "Config system unavailable. (Environment isStudio)"})
